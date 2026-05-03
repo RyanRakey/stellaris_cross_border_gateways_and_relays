@@ -1,4 +1,4 @@
-[h1]Ally Hyper Relay[/h1]
+[h1]Cross-Border Gateways and Relays[/h1]
 
 Allows empires to build Hyper Relays and Gateways in the territory of allied empires, not just their own borders or subjects.
 
@@ -27,6 +27,10 @@ Allies are those empires with which you have [b]at least one[/b] of the followin
 Target game version: [b]v4.3*[/b]
 
 This is a minimal override. It only touches the Hyper Relay and Gateway megastructure definitions and adds one scripted trigger. Should be compatible with most mods unless they also override those megastructure build rules.
+
+[h2]Source Code[/h2]
+The source code for this mod is available on GitHub:
+[url=https://github.com/RyanRakey/stellaris_cross_border_gateways_and_relays]github.com/RyanRakey/stellaris_cross_border_gateways_and_relays[/url]
 
 [h2]Credits[/h2]
 This mod was created with the help of AI: [b]opencode[/b] running the [b]Kimi K2.6[/b] model.
