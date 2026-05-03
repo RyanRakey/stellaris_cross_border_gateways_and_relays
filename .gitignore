@@ -1,0 +1,6 @@
+# Ignore hard-linked reference files
+Stellaris-Modding-Documentation.md
+Stellaris_Modding_Reference.md
+
+# Ignore agent instruction file
+AGENTS.md

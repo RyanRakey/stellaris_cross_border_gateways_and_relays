@@ -1,0 +1,34 @@
+# Scripted trigger to check if a country is considered an ally for Hyper Relay construction
+# Scope: country (the system owner)
+# From: country (the builder)
+is_hyper_relay_ally = {
+	OR = {
+		# Same empire
+		is_same_value = from
+		# Owner is overlord of builder
+		is_overlord_to = from
+		# Owner is subject of builder
+		AND = {
+			is_subject = yes
+			overlord = { is_same_value = from }
+		}
+		# Federation member
+		is_in_federation_with = from
+		# Non-Aggression Pact
+		has_non_aggression_pact = from
+		# Commercial Pact
+		has_commercial_pact = from
+		# Research Agreement
+		has_research_agreement = from
+		# Migration Treaty
+		has_diplo_migration_treaty = from
+		# Defensive Pact
+		has_defensive_pact = from
+		# Owner guarantees builder's independence
+		is_guaranteeing = from
+		# Builder guarantees owner's independence
+		from = {
+			is_guaranteeing = prev
+		}
+	}
+}
